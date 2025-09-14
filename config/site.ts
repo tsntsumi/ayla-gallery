@@ -7,7 +7,7 @@ export const siteConfig = {
   url: "https://ayla.stairwayheaven.com",
   links: {
     twitter: "https://x.com/stairwayheaven",
-    note: "https://note.com/stairwayheaven",
+    github: "https://note.com/stairwayheaven",
   },
   ogImage: "https://ayla.stairwayheaven.com/profile-img.jpg",
   iconIco:

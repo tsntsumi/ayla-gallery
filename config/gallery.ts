@@ -1,17 +1,18 @@
 import { Icons } from "@/components/common/icons";
 
-export interface imageInterface {
+export interface galleryInterface {
   name: string;
   prompt: string;
-  negativeprompt: string;
+  negativePrompt: string;
+  seed: number;
   image: any;
 }
 
-export const unsortedGallery: imageInterface[] = [
+export const unsortedGallery: galleryInterface[] = [
 ];
 
 export const gallery = unsortedGallery
   ?.slice()
-  ?.sort((a, b) => b.name - a.name) || [];
+  ?.sort((a, b) => b.name.localeCompare(a.name)) || [];
 
 export const featuredGallery = gallery?.slice(0, 6) || [];
